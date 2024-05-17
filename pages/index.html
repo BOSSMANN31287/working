@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/trafficOffenders.css">
+</head>
+<body>
+
+    <div class="main_body">
+        <div class="main_body_hdr">
+            <h1>Traffic Offenders</h1>
+        </div>
+        
+        <div class="main_body_inner">
+            <div class="inputs">
+
+                <input id="name" type="text" placeholder="Enter name">
+        
+                <input id="offence" type="text" placeholder="Enter offence">
+            
+                <button onclick="saveOffender()" class="saveBtn">Save</button>
+            
+                <input id="search" type="text" placeholder="Search by name">
+            
+                <button onclick="searchOffender()" class="searchBtn">Search</button>
+    
+            </div>
+    
+            <div class="outputs">
+                <table id="offenders-table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Offence</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table-body">
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+        
+        
+       
+    </div>
+
+
+
+
+
+    <script src="/js/trafficOffenders.js"></script>
+
+</body>
+</html>
